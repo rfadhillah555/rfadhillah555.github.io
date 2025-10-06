@@ -1,10 +1,12 @@
-    <!DOCTYPE html>
+      <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GamerZone</title>
+  <title>Galaxy Gamer</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
     body {
       margin: 0;
       font-family: 'Orbitron', sans-serif;
@@ -14,135 +16,113 @@
     }
 
     .overlay {
-      background-color: rgba(0, 0, 0, 0.75);
-      padding: 40px;
+      background-color: rgba(0, 0, 0, 0.85);
       min-height: 100vh;
-    }
-
-    header {
+      padding: 50px 20px;
       text-align: center;
-      padding: 20px 0;
     }
 
-    header h1 {
-      font-size: 48px;
-      color: #00ffea;
-      text-shadow: 0 0 10px #00ffea;
+    h1 {
+      font-size: 60px;
+      color: #00ffe1;
+      text-shadow: 0 0 20px #00ffe1;
+      margin-bottom: 10px;
     }
 
-    nav {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #fff;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #00ffea;
-    }
-
-    .content {
-      max-width: 800px;
+    p {
+      font-size: 20px;
+      max-width: 700px;
       margin: auto;
-      text-align: center;
-    }
-
-    .content h2 {
-      font-size: 32px;
-      margin-bottom: 20px;
-      color: #ff00c8;
-      text-shadow: 0 0 10px #ff00c8;
-    }
-
-    .content p {
-      font-size: 18px;
-      line-height: 1.6;
+      margin-bottom: 30px;
     }
 
     .btn {
       display: inline-block;
-      margin-top: 30px;
-      padding: 12px 25px;
+      padding: 15px 30px;
       background-color: #ff00c8;
-      color: #fff;
+      color: white;
+      font-size: 18px;
       border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
+      border-radius: 10px;
       text-decoration: none;
-      box-shadow: 0 0 10px #ff00c8;
+      box-shadow: 0 0 15px #ff00c8;
+      transition: background 0.3s;
     }
 
     .btn:hover {
       background-color: #ff33d4;
     }
 
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+    nav {
+      margin-top: 30px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #ccc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00ffe1;
+    }
   </style>
 </head>
 <body>
   <div class="overlay">
-    <header>
-      <h1>GamerZone</h1>
-    </header>
+    <h1>Galaxy Gamer</h1>
+    <p>Selamat datang di dunia para pejuang digital! Bergabunglah dengan komunitas gamer paling epic dan ikuti turnamen galaksi!</p>
+    <a href="pendaftaran.html" class="btn">Gabung Sekarang</a>
     <nav>
       <a href="#">Beranda</a>
       <a href="#">Turnamen</a>
-      <a href="#">Profil</a>
+      <a href="#">Leaderboard</a>
       <a href="#">Kontak</a>
     </nav>
-    <div class="content">
-      <h2>Selamat Datang di Dunia Gamer</h2>
-      <p>Gabung komunitas gamer paling keren di Indonesia. Ikuti turnamen, pamer skill, dan temukan teman satu server!</p>
-      <a href="#" class="btn">Gabung Sekarang</a>
-    </div>
   </div>
 </body>
 </html>
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pendaftaran GamerZone</title>
+  <title>Pendaftaran Galaxy Gamer</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
     body {
       margin: 0;
       font-family: 'Orbitron', sans-serif;
-      background: url('https://images.unsplash.com/photo-1605902711622-cfb43c4437d3') no-repeat center center fixed;
+      background: url('https://images.unsplash.com/photo-1611605698335-8b3e7f3b1b9e') no-repeat center center fixed;
       background-size: cover;
       color: #fff;
     }
 
     .overlay {
-      background-color: rgba(0, 0, 0, 0.8);
-      padding: 40px;
+      background-color: rgba(0, 0, 0, 0.85);
       min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 40px;
     }
 
     .form-box {
       background-color: #111;
       padding: 30px;
       border-radius: 15px;
-      box-shadow: 0 0 15px #00ffea;
+      box-shadow: 0 0 20px #00ffe1;
       width: 100%;
       max-width: 500px;
     }
 
     h2 {
       text-align: center;
-      color: #00ffea;
+      color: #00ffe1;
       margin-bottom: 25px;
+      text-shadow: 0 0 10px #00ffe1;
     }
 
     label {
@@ -177,8 +157,6 @@
     button:hover {
       background-color: #ff33d4;
     }
-
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
   </style>
 </head>
 <body>
@@ -212,4 +190,113 @@
   </div>
 </body>
 </html>
-y
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu Game | Galaxy Gamer</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: url('https://images.unsplash.com/photo-1607083206173-3be0b9c7f3d3') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.85);
+      min-height: 100vh;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 50px;
+      color: #00ffe1;
+      text-shadow: 0 0 20px #00ffe1;
+      margin-bottom: 40px;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .menu-item {
+      background-color: #111;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px #ff00c8;
+      transition: transform 0.3s;
+    }
+
+    .menu-item:hover {
+      transform: scale(1.05);
+    }
+
+    .menu-item h3 {
+      color: #ff00c8;
+      margin-bottom: 10px;
+    }
+
+    .menu-item p {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .menu-item a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #00ffe1;
+      color: #000;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .menu-item a:hover {
+      background-color: #00c9b7;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>Menu Game</h1>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <h3>Battle Royale</h3>
+        <p>Game survival penuh aksi seperti PUBG, Free Fire, dan Apex Legends.</p>
+        <a href="#">Mainkan</a>
+      </div>
+      <div class="menu-item">
+        <h3>MOBA</h3>
+        <p>Strategi tim dan skill tinggi di Mobile Legends, Dota 2, dan League of Legends.</p>
+        <a href="#">Mainkan</a>
+      </div>
+      <div class="menu-item">
+        <h3>FPS</h3>
+        <p>Game tembak-tembakan cepat seperti Valorant, CS:GO, dan Call of Duty.</p>
+        <a href="#">Mainkan</a>
+      </div>
+      <div class="menu-item">
+        <h3>RPG</h3>
+        <p>Petualangan epik di dunia fantasi seperti Genshin Impact dan Skyrim.</p>
+        <a href="#">Mainkan</a>
+      </div>
+      <div class="menu-item">
+        <h3>Simulasi</h3>
+        <p>Bangun dunia sendiri di The Sims, Minecraft, atau Cities: Skylines.</p>
+        <a href="#">Mainkan</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
