@@ -1,215 +1,39 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>GamerVerse</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulir Pendaftaran Siswa</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
     body {
-      font-family: 'Orbitron', sans-serif;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: #fff;
-    }
-
-    header {
-      background-color: #111;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-    }
-
-    header h1 {
-      font-size: 40px;
-      color: #00ffe1;
-      text-shadow: 0 0 10px #00ffe1;
-    }
-
-    nav {
-      background-color: #222;
-      display: flex;
-      justify-content: center;
-      padding: 10px 0;
-    }
-
-    nav a {
-      color: #ccc;
-      text-decoration: none;
-      margin: 0 20px;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #00ffe1;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 60px 20px;
-    }
-
-    .hero h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
-      color: #ff00c8;
-      text-shadow: 0 0 10px #ff00c8;
-    }
-
-    .hero p {
-      max-width: 700px;
-      margin: auto;
-      font-size: 18px;
-      color: #eee;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 12px 25px;
-      background-color: #ff00c8;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      text-decoration: none;
-      box-shadow: 0 0 10px #ff00c8;
-    }
-
-    .btn:hover {
-      background-color: #ff33d4;
-    }
-
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .feature-box {
-      background-color: #111;
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 0 15px #00ffe1;
-      text-align: center;
-    }
-
-    .feature-box h3 {
-      color: #00ffe1;
-      margin-bottom: 10px;
-    }
-
-    .feature-box p {
-      font-size: 14px;
-      color: #ccc;
-    }
-
-    footer {
-      background-color: #111;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      color: #aaa;
-      margin-top: 50px;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>GamerVerse</h1>
-  </header>
-
-  <nav>
-    <a href="#">Beranda</a>
-    <a href="#">Turnamen</a>
-    <a href="#">Tim</a>
-    <a href="#">Pendaftaran</a>
-  </nav>
-
-  <section class="hero">
-    <h2>Selamat Datang di GamerVerse</h2>
-    <p>Tempat berkumpulnya para gamer sejati. Ikuti turnamen, pamer skill, dan jadilah legenda!</p>
-    <a href="#" class="btn">Gabung Sekarang</a>
-  </section>
-
-  <section class="features">
-    <div class="feature-box">
-      <h3>Turnamen Online</h3>
-      <p>Ikuti kompetisi seru dari berbagai genre game dan menangkan hadiah keren.</p>
-    </div>
-    <div class="feature-box">
-      <h3>Profil Tim</h3>
-      <p>Buat tim, kelola anggota, dan tampilkan statistik permainanmu.</p>
-    </div>
-    <div class="feature-box">
-      <h3>Leaderboard</h3>
-      <p>Lihat siapa yang mendominasi arena dan capai posisi teratas!</p>
-    </div>
-  </section>
-
-  <footer>
-    &copy; 2025 GamerVerse. All rights reserved.
-  </footer>
-
-</body>
-          </html>
-        
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Formulir Pendaftaran</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-
-    * {
-      box-sizing: border-box;
       margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Roboto', sans-serif;
-      background: linear-gradient(to right, #74ebd5, #9face6);
-      min-height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #74ebd5, #ACB6E5);
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 20px;
+      height: 100vh;
     }
 
-    .form-container {
-      background-color: #fff;
+    .container {
+      background-color: white;
       padding: 30px;
-      border-radius: 12px;
+      border-radius: 15px;
       box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-      max-width: 500px;
       width: 100%;
+      max-width: 500px;
     }
 
     h2 {
       text-align: center;
-      margin-bottom: 25px;
       color: #333;
+      margin-bottom: 20px;
     }
 
     label {
       display: block;
       margin-top: 15px;
       font-weight: bold;
-      color: #555;
     }
 
     input, select {
@@ -218,11 +42,10 @@
       margin-top: 5px;
       border: 1px solid #ccc;
       border-radius: 8px;
-      font-size: 16px;
     }
 
     button {
-      margin-top: 25px;
+      margin-top: 20px;
       width: 100%;
       padding: 12px;
       background-color: #4CAF50;
@@ -231,39 +54,32 @@
       border-radius: 8px;
       font-size: 16px;
       cursor: pointer;
-      transition: background 0.3s;
     }
 
     button:hover {
       background-color: #45a049;
     }
-
-    @media (max-width: 600px) {
-      .form-container {
-        padding: 20px;
-      }
-    }
   </style>
 </head>
 <body>
-  <div class="form-container">
-    <h2>Formulir Pendaftaran</h2>
+  <div class="container">
+    <h2>Formulir Pendaftaran Siswa</h2>
     <form>
       <label for="nama">Nama Lengkap</label>
-      <input type="text" id="nama" name="nama" required />
+      <input type="text" id="nama" name="nama" required>
 
       <label for="email">Email</label>
-      <input type="email" id="email" name="email" required />
+      <input type="email" id="email" name="email" required>
 
       <label for="telepon">Nomor Telepon</label>
-      <input type="tel" id="telepon" name="telepon" required />
+      <input type="tel" id="telepon" name="telepon" required>
 
-      <label for="kategori">Kategori Pendaftaran</label>
-      <select id="kategori" name="kategori" required>
-        <option value="">-- Pilih Kategori --</option>
-        <option value="siswa">Siswa</option>
-        <option value="mahasiswa">Mahasiswa</option>
-        <option value="umum">Umum</option>
+      <label for="kelas">Kelas</label>
+      <select id="kelas" name="kelas" required>
+        <option value="">-- Pilih Kelas --</option>
+        <option value="X">X</option>
+        <option value="XI">XI</option>
+        <option value="XII">XII</option>
       </select>
 
       <button type="submit">Daftar Sekarang</button>
