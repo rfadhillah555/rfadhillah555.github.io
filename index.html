@@ -1,311 +1,9 @@
-      <!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Galaxy Gamer</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
-
-    body {
-      margin: 0;
-      font-family: 'Orbitron', sans-serif;
-      background: url('https://images.unsplash.com/photo-1605902711622-cfb43c4437d3') no-repeat center center fixed;
-      background-size: cover;
-      color: #fff;
-    }
-
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.85);
-      min-height: 100vh;
-      padding: 50px 20px;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 60px;
-      color: #00ffe1;
-      text-shadow: 0 0 20px #00ffe1;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 20px;
-      max-width: 700px;
-      margin: auto;
-      margin-bottom: 30px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 15px 30px;
-      background-color: #ff00c8;
-      color: white;
-      font-size: 18px;
-      border: none;
-      border-radius: 10px;
-      text-decoration: none;
-      box-shadow: 0 0 15px #ff00c8;
-      transition: background 0.3s;
-    }
-
-    .btn:hover {
-      background-color: #ff33d4;
-    }
-
-    nav {
-      margin-top: 30px;
-    }
-
-    nav a {
-      margin: 0 15px;
-      color: #ccc;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      color: #00ffe1;
-    }
-  </style>
-</head>
-<body>
-  <div class="overlay">
-    <h1>Galaxy Gamer</h1>
-    <p>Selamat datang di dunia para pejuang digital! Bergabunglah dengan komunitas gamer paling epic dan ikuti turnamen galaksi!</p>
-    <a href="pendaftaran.html" class="btn">Gabung Sekarang</a>
-    <nav>
-      <a href="#">Beranda</a>
-      <a href="#">Turnamen</a>
-      <a href="#">Leaderboard</a>
-      <a href="#">Kontak</a>
-    </nav>
-  </div>
-</body>
-</html>
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pendaftaran Galaxy Gamer</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
-
-    body {
-      margin: 0;
-      font-family: 'Orbitron', sans-serif;
-      background: url('https://images.unsplash.com/photo-1611605698335-8b3e7f3b1b9e') no-repeat center center fixed;
-      background-size: cover;
-      color: #fff;
-    }
-
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.85);
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 40px;
-    }
-
-    .form-box {
-      background-color: #111;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 0 20px #00ffe1;
-      width: 100%;
-      max-width: 500px;
-    }
-
-    h2 {
-      text-align: center;
-      color: #00ffe1;
-      margin-bottom: 25px;
-      text-shadow: 0 0 10px #00ffe1;
-    }
-
-    label {
-      display: block;
-      margin-top: 15px;
-      font-weight: bold;
-    }
-
-    input, select {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border: none;
-      border-radius: 8px;
-      background-color: #222;
-      color: #fff;
-    }
-
-    button {
-      margin-top: 25px;
-      width: 100%;
-      padding: 12px;
-      background-color: #ff00c8;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
-      box-shadow: 0 0 10px #ff00c8;
-    }
-
-    button:hover {
-      background-color: #ff33d4;
-    }
-  </style>
-</head>
-<body>
-  <div class="overlay">
-    <div class="form-box">
-      <h2>Formulir Pendaftaran Gamer</h2>
-      <form>
-        <label for="nama">Nama Gamer</label>
-        <input type="text" id="nama" name="nama" required>
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="game">Game Favorit</label>
-        <input type="text" id="game" name="game" required>
-
-        <label for="rank">Rank Saat Ini</label>
-        <select id="rank" name="rank" required>
-          <option value="">-- Pilih Rank --</option>
-          <option value="Bronze">Bronze</option>
-          <option value="Silver">Silver</option>
-          <option value="Gold">Gold</option>
-          <option value="Platinum">Platinum</option>
-          <option value="Diamond">Diamond</option>
-          <option value="Mythic">Mythic</option>
-        </select>
-
-        <button type="submit">Daftar Sekarang</button>
-      </form>
-    </div>
-  </div>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Menu Game | Galaxy Gamer</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
-
-    body {
-      margin: 0;
-      font-family: 'Orbitron', sans-serif;
-      background: url('https://images.unsplash.com/photo-1607083206173-3be0b9c7f3d3') no-repeat center center fixed;
-      background-size: cover;
-      color: #fff;
-    }
-
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.85);
-      min-height: 100vh;
-      padding: 50px 20px;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 50px;
-      color: #00ffe1;
-      text-shadow: 0 0 20px #00ffe1;
-      margin-bottom: 40px;
-    }
-
-    .menu-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 30px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .menu-item {
-      background-color: #111;
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 0 15px #ff00c8;
-      transition: transform 0.3s;
-    }
-
-    .menu-item:hover {
-      transform: scale(1.05);
-    }
-
-    .menu-item h3 {
-      color: #ff00c8;
-      margin-bottom: 10px;
-    }
-
-    .menu-item p {
-      font-size: 14px;
-      color: #ccc;
-    }
-
-    .menu-item a {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 20px;
-      background-color: #00ffe1;
-      color: #000;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-    }
-
-    .menu-item a:hover {
-      background-color: #00c9b7;
-    }
-  </style>
-</head>
-<body>
-  <div class="overlay">
-    <h1>Menu Game</h1>
-    <div class="menu-grid">
-      <div class="menu-item">
-        <h3>Battle Royale</h3>
-        <p>Game survival penuh aksi seperti PUBG, Free Fire, dan Apex Legends.</p>
-        <a href="#">Mainkan</a>
-      </div>
-      <div class="menu-item">
-        <h3>MOBA</h3>
-        <p>Strategi tim dan skill tinggi di Mobile Legends, Dota 2, dan League of Legends.</p>
-        <a href="#">Mainkan</a>
-      </div>
-      <div class="menu-item">
-        <h3>FPS</h3>
-        <p>Game tembak-tembakan cepat seperti Valorant, CS:GO, dan Call of Duty.</p>
-        <a href="#">Mainkan</a>
-      </div>
-      <div class="menu-item">
-        <h3>RPG</h3>
-        <p>Petualangan epik di dunia fantasi seperti Genshin Impact dan Skyrim.</p>
-        <a href="#">Mainkan</a>
-      </div>
-      <div class="menu-item">
-        <h3>Simulasi</h3>
-        <p>Bangun dunia sendiri di The Sims, Minecraft, atau Cities: Skylines.</p>
-        <a href="#">Mainkan</a>
-      </div>
-    </div>
-  </div>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Galaxy Gamer | Beranda</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GamerVerse</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
 
@@ -319,7 +17,6 @@
       font-family: 'Orbitron', sans-serif;
       background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
       color: #fff;
-      line-height: 1.6;
     }
 
     header {
@@ -330,7 +27,7 @@
     }
 
     header h1 {
-      font-size: 36px;
+      font-size: 40px;
       color: #00ffe1;
       text-shadow: 0 0 10px #00ffe1;
     }
@@ -390,38 +87,82 @@
       background-color: #ff33d4;
     }
 
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .feature-box {
+      background-color: #111;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px #00ffe1;
+      text-align: center;
+    }
+
+    .feature-box h3 {
+      color: #00ffe1;
+      margin-bottom: 10px;
+    }
+
+    .feature-box p {
+      font-size: 14px;
+      color: #ccc;
+    }
+
     footer {
       background-color: #111;
       text-align: center;
       padding: 20px;
-      margin-top: 50px;
       font-size: 14px;
       color: #aaa;
+      margin-top: 50px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Galaxy Gamer</h1>
+    <h1>GamerVerse</h1>
   </header>
 
   <nav>
     <a href="#">Beranda</a>
-    <a href="menu.html">Menu Game</a>
-    <a href="pendaftaran.html">Pendaftaran</a>
+    <a href="#">Turnamen</a>
+    <a href="#">Tim</a>
+    <a href="#">Pendaftaran</a>
     <a href="#">Kontak</a>
   </nav>
 
   <section class="hero">
-    <h2>Selamat Datang di Dunia Gamer</h2>
-    <p>Gabung komunitas gamer paling epic di Indonesia. Ikuti turnamen, pamer skill, dan temukan teman satu server!</p>
-    <a href="pendaftaran.html" class="btn">Gabung Sekarang</a>
+    <h2>Selamat Datang di GamerVerse</h2>
+    <p>Tempat berkumpulnya para gamer sejati. Ikuti turnamen, pamer skill, dan jadilah legenda!</p>
+    <a href="#" class="btn">Gabung Sekarang</a>
+  </section>
+
+  <section class="features">
+    <div class="feature-box">
+      <h3>Turnamen Online</h3>
+      <p>Ikuti kompetisi seru dari berbagai genre game dan menangkan hadiah keren.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Profil Tim</h3>
+      <p>Buat tim, kelola anggota, dan tampilkan statistik permainanmu.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Leaderboard</h3>
+      <p>Lihat siapa yang mendominasi arena dan capai posisi teratas!</p>
+    </div>
   </section>
 
   <footer>
-    &copy; 2025 Galaxy Gamer. All rights reserved.
+    &copy; 2025 GamerVerse. All rights reserved.
   </footer>
 
 </body>
-</html>
+          </html>
+        
