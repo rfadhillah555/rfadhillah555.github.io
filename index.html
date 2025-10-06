@@ -1,413 +1,107 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Beranda - Sekolah SMK ISLAM MALAHAYATI</title>
+  <title>GamerZone</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
-    }
-    header {
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-    }
-    nav {
-      background-color: #2c5364;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    nav a {
-      color: white;
-      padding: 15px 20px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      background-color: #1b2a38;
-    }
-    .hero {
-      background: url('https://source.unsplash.com/1600x600/?school,classroom,education') no-repeat center center;
+      font-family: 'Orbitron', sans-serif;
+      background: url('https://images.unsplash.com/photo-1605902711622-cfb43c4437d3') no-repeat center center fixed;
       background-size: cover;
-      height: 400px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 2.5em;
-      font-weight: bold;
-      text-shadow: 2px 2px 8px #000;
+      color: #fff;
     }
-    .section {
-      padding: 40px 20px;
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 40px;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      font-size: 48px;
+      color: #00ffea;
+      text-shadow: 0 0 10px #00ffea;
+    }
+
+    nav {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ffea;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: auto;
       text-align: center;
     }
-    .section h2 {
-      color: #2c5364;
+
+    .content h2 {
+      font-size: 32px;
       margin-bottom: 20px;
+      color: #ff00c8;
+      text-shadow: 0 0 10px #ff00c8;
     }
-    .section p {
-      max-width: 700px;
-      margin: auto;
-      font-size: 1.1em;
+
+    .content p {
+      font-size: 18px;
       line-height: 1.6;
     }
-    footer {
-      background-color: #203a43;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-  </style>
-</head>
-<body>
 
-  <header>
-    <h1>Sekolah SMK Islam Malahayati</h1>
-    <p>Membangun Generasi Unggul dan Berkarakter</p>
-  </header>
-
-  <nav>
-    <a href="#">Beranda</a>
-    <a href="#">Profil Sekolah</a>
-    <a href="#">Program Unggulan</a>
-    <a href="#">Prestasi</a>
-    <a href="#">Kontak</a>
-  </nav>
-
-  <div class="hero">
-    Selamat Datang di Sekolah SMK Islam Malahayati!
-  </div>
-
-  <div class="section">
-    <h2>Tentang Kami</h2>
-    <p>Sekolah SMK Islam Malahayati adalah lembaga pendidikan yang berkomitmen menciptakan lingkungan belajar yang inspiratif, inovatif, dan inklusif. Kami percaya bahwa setiap anak memiliki potensi luar biasa yang perlu diasah dengan pendekatan yang tepat dan penuh kasih.</p>
-  </div>
-
-  <div class="section">
-    <h2>Program Unggulan</h2>
-    <p>Kami menawarkan berbagai program unggulan seperti kelas bilingual, laboratorium digital, kegiatan ekstrakurikuler kreatif, dan pembinaan karakter berbasis nilai-nilai lokal dan global.</p>
-  </div>
-
-  <footer>
-    &copy; 2025 Sekolah SMK Islam Malahayati | Desain oleh rfadhillah555 
-  </footer>
-
-</body>
-</html>
-<style>
-  .btn-kece {
-    background-color: #0077b6;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    font-size: 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  .btn-kece:hover {
-    background-color: #023e8a;
-  }
-</style>
-
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Profil Sekolah SMK ISLAM MALAHAYATI</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f0f4f8;
-    }
-    header {
-      background: linear-gradient(to right, #006699, #0099cc);
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-    }
-    .container {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-      background-color: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 25px;
+      background-color: #ff00c8;
+      color: #fff;
+      border: none;
       border-radius: 8px;
-    }
-    h2 {
-      color: #006699;
-      margin-bottom: 20px;
-    }
-    p {
-      font-size: 1.1em;
-      line-height: 1.7;
-      color: #333;
-    }
-    .highlight {
-      background-color: #e0f7fa;
-      padding: 15px;
-      border-left: 5px solid #0099cc;
-      margin: 30px 0;
-      border-radius: 5px;
-    }
-    footer {
-      background-color: #006699;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>Profil Sekolah SMK ISLAM MALAHAYATI</h1>
-    <p>Tempat tumbuhnya generasi unggul dan berkarakter</p>
-  </header>
-
-  <div class="container">
-    <h2>Visi & Misi</h2>
-    <p><strong>Visi:</strong> Menjadi sekolah unggulan yang mencetak generasi cerdas, kreatif, dan berakhlak mulia.</p>
-    <p><strong>Misi:</strong></p>
-    <ul>
-      <li>Menyediakan pendidikan berkualitas berbasis teknologi dan nilai-nilai kebangsaan.</li>
-      <li>Mendorong pengembangan potensi akademik dan non-akademik siswa.</li>
-      <li>Membangun lingkungan belajar yang aman, inklusif, dan inspiratif.</li>
-    </ul>
-
-    <div class="highlight">
-      <h2>Fasilitas Unggulan</h2>
-      <p>Laboratorium digital, ruang kelas interaktif, perpustakaan modern, studio seni, lapangan olahraga, dan Wi-Fi gratis di seluruh area sekolah.</p>
-    </div>
-
-    <h2>Tenaga Pengajar</h2>
-    <p>Tim guru profesional dan berpengalaman yang siap membimbing siswa dengan pendekatan personal dan metode pembelajaran terkini.</p>
-
-    <h2>Lokasi</h2>
-    <p>Jl. Pendidikan No. 123, Setiabudi, Jakarta Selatan, DKI Jakarta</p>
-  </div>
-
-  <footer>
-    &copy; 2025 Sekolah SMK ISLAM MALAHAYATI| Hubungi kami di info@sekolahsmkislammalahayati.sch.id
-  </footer>
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Beranda - Sekolah SMK ISLAM MALAHAYATI</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
-    }
-    header {
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-    }
-    nav {
-      background-color: #2c5364;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    nav a {
-      color: white;
-      padding: 15px 20px;
+      font-size: 16px;
+      cursor: pointer;
       text-decoration: none;
-      font-weight: bold;
+      box-shadow: 0 0 10px #ff00c8;
     }
-    nav a:hover {
-      background-color: #1b2a38;
+
+    .btn:hover {
+      background-color: #ff33d4;
     }
-    .hero {
-      background: url('https://source.unsplash.com/1600x600/?school,classroom,education') no-repeat center center;
-      background-size: cover;
-      height: 400px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 2.5em;
-      font-weight: bold;
-      text-shadow: 2px 2px 8px #000;
-    }
-    .section {
-      padding: 40px 20px;
-      text-align: center;
-    }
-    .section h2 {
-      color: #2c5364;
-      margin-bottom: 20px;
-    }
-    .section p {
-      max-width: 700px;
-      margin: auto;
-      font-size: 1.1em;
-      line-height: 1.6;
-    }
-    footer {
-      background-color: #203a43;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
   </style>
 </head>
 <body>
-
-  <header>
-    <h1>Sekolah SMK Islam Malahayati</h1>
-    <p>Membangun Generasi Unggul dan Berkarakter</p>
-  </header>
-
-  <nav>
-    <a href="#">Beranda</a>
-    <a href="#">Profil Sekolah</a>
-    <a href="#">Program Unggulan</a>
-    <a href="#">Prestasi</a>
-    <a href="#">Kontak</a>
-  </nav>
-
-  <div class="hero">
-    Selamat Datang di Sekolah SMK Islam Malahayati!
-  </div>
-
-  <div class="section">
-    <h2>Tentang Kami</h2>
-    <p>Sekolah SMK Islam Malahayati adalah lembaga pendidikan yang berkomitmen menciptakan lingkungan belajar yang inspiratif, inovatif, dan inklusif. Kami percaya bahwa setiap anak memiliki potensi luar biasa yang perlu diasah dengan pendekatan yang tepat dan penuh kasih.</p>
-  </div>
-
-  <div class="section">
-    <h2>Program Unggulan</h2>
-    <p>Kami menawarkan berbagai program unggulan seperti kelas bilingual, laboratorium digital, kegiatan ekstrakurikuler kreatif, dan pembinaan karakter berbasis nilai-nilai lokal dan global.</p>
-  </div>
-
-  <footer>
-    &copy; 2025 Sekolah SMK Islam Malahayati | Desain oleh rfadhillah555 
-  </footer>
-
-</body>
-</html>
-<style>
-  .btn-kece {
-    background-color: #0077b6;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    font-size: 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  .btn-kece:hover {
-    background-color: #023e8a;
-  }
-</style>
-
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Profil Sekolah SMK ISLAM MALAHAYATI</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f0f4f8;
-    }
-    header {
-      background: linear-gradient(to right, #006699, #0099cc);
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-    }
-    .container {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-      background-color: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 8px;
-    }
-    h2 {
-      color: #006699;
-      margin-bottom: 20px;
-    }
-    p {
-      font-size: 1.1em;
-      line-height: 1.7;
-      color: #333;
-    }
-    .highlight {
-      background-color: #e0f7fa;
-      padding: 15px;
-      border-left: 5px solid #0099cc;
-      margin: 30px 0;
-      border-radius: 5px;
-    }
-    footer {
-      background-color: #006699;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>Profil Sekolah SMK ISLAM MALAHAYATI</h1>
-    <p>Tempat tumbuhnya generasi unggul dan berkarakter</p>
-  </header>
-
-  <div class="container">
-    <h2>Visi & Misi</h2>
-    <p><strong>Visi:</strong> Menjadi sekolah unggulan yang mencetak generasi cerdas, kreatif, dan berakhlak mulia.</p>
-    <p><strong>Misi:</strong></p>
-    <ul>
-      <li>Menyediakan pendidikan berkualitas berbasis teknologi dan nilai-nilai kebangsaan.</li>
-      <li>Mendorong pengembangan potensi akademik dan non-akademik siswa.</li>
-      <li>Membangun lingkungan belajar yang aman, inklusif, dan inspiratif.</li>
-    </ul>
-
-    <div class="highlight">
-      <h2>Fasilitas Unggulan</h2>
-      <p>Laboratorium digital, ruang kelas interaktif, perpustakaan modern, studio seni, lapangan olahraga, dan Wi-Fi gratis di seluruh area sekolah.</p>
+  <div class="overlay">
+    <header>
+      <h1>GamerZone</h1>
+    </header>
+    <nav>
+      <a href="#">Beranda</a>
+      <a href="#">Turnamen</a>
+      <a href="#">Profil</a>
+      <a href="#">Kontak</a>
+    </nav>
+    <div class="content">
+      <h2>Selamat Datang di Dunia Gamer</h2>
+      <p>Gabung komunitas gamer paling keren di Indonesia. Ikuti turnamen, pamer skill, dan temukan teman satu server!</p>
+      <a href="#" class="btn">Gabung Sekarang</a>
     </div>
-
-    <h2>Tenaga Pengajar</h2>
-    <p>Tim guru profesional dan berpengalaman yang siap membimbing siswa dengan pendekatan personal dan metode pembelajaran terkini.</p>
-
-    <h2>Lokasi</h2>
-    <p>Jl. Pendidikan No. 123, Setiabudi, Jakarta Selatan, DKI Jakarta</p>
   </div>
-
-  <footer>
-    &copy; 2025 Sekolah SMK ISLAM MALAHAYATI| Hubungi kami di info@sekolahsmkislammalahayati.sch.id
-  </footer>
-
 </body>
 </html>
-
-
-
-
