@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Telurku | Jual Telur Segar</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to right, #fff8e1, #ffecb3);
+      color: #333;
+      min-height: 100vh;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1584270354949-1f7a7c3c4b5e') no-repeat center center;
+      background-size: cover;
+      padding: 80px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      text-shadow: 0 0 10px rgba(0,0,0,0.6);
+    }
+
+    header p {
+      font-size: 18px;
+      text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    }
+
+    nav {
+      background-color: #fbc02d;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .section {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #f57f17;
+    }
+
+    .section p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .product-item {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .product-item h3 {
+      color: #f57f17;
+      margin-bottom: 10px;
+    }
+
+    .product-item p {
+      font-size: 16px;
+      color: #777;
+    }
+
+    .wa-button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 10px #25D366;
+    }
+
+    .wa-button:hover {
+      background-color: #1ebc59;
+    }
+
+    footer {
+      background-color: #fbc02d;
+      color: #333;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Telurku</h1>
+    <p>Telur ayam segar langsung dari peternakan ke dapur Anda</p>
+  </header>
+
+  <nav>
+    <a href="#tentang">Tentang</a>
+    <a href="#produk">Produk</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <section class="section" id="tentang">
+    <h2>Tentang Kami</h2>
+    <p>Telurku adalah usaha lokal yang menyediakan telur ayam segar, bersih, dan bergizi. Kami bekerja sama langsung dengan peternak terpercaya untuk memastikan kualitas terbaik sampai ke tangan pelanggan. Cocok untuk kebutuhan rumah tangga, warung makan, hingga bisnis kuliner.</p>
+  </section>
+
+  <section class="section" id="produk">
+    <h2>Produk Telur</h2>
+    <div class="product-grid">
+      <div class="product-item">
+        <h3>Telur Ayam Kampung</h3>
+        <p>Isi 10 butir – Rp 25.000</p>
+        <a class="wa-button" href="https://wa.me/6281234567890?text=Halo%20Telurku,%20saya%20mau%20pesan%20Telur%20Ayam%20Kampung" target="_blank">Pesan via WA</a>
+      </div>
+      <div class="product-item">
+        <h3>Telur Ayam Negeri</h3>
+        <p>Isi 15 butir – Rp 30.000</p>
+        <a class="wa-button" href="https://wa.me/6281234567890?text=Halo%20Telurku,%20saya%20mau%20pesan%20Telur%20Ayam%20Negeri" target="_blank">Pesan via WA</a>
+      </div>
+      <div class="product-item">
+        <h3>Telur Omega 3</h3>
+        <p>Isi 10 butir – Rp 35.000</p>
+        <a class="wa-button" href="https://wa.me/6281234567890?text=Halo%20Telurku,%20saya%20mau%20pesan%20Telur%20Omega%203" target="_blank">Pesan via WA</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="kontak">
+    <h2>Kontak</h2>
+    <p>📍 Jl. Peternakan Sejahtera No. 12, Jakarta<br>📞 0812-3456-7890<br>📧 telurku@usaha.id</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Telurku. Telur segar, harga bersahabat, layanan terpercaya.
+  </footer>
+
+</body>
+    </html>
+    
