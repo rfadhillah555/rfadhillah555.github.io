@@ -3,27 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Galeri Kreatif</title>
+  <title>Sanggar Tari Jawa Timur – TMII</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Quicksand:wght@500&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
     body {
       font-family: 'Quicksand', sans-serif;
-      margin: 0;
-      background: linear-gradient(to right, #fce4ec, #e0f7fa);
+      background: linear-gradient(to right, #fff8f0, #fce4ec);
       color: #333;
     }
 
     header {
-      background-color: #ff4081;
-      color: white;
+      background: url('https://images.unsplash.com/photo-1586075010920-5e5c9b2f2e2f') no-repeat center center;
+      background-size: cover;
+      padding: 80px 20px;
       text-align: center;
-      padding: 60px 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      color: white;
+      text-shadow: 0 0 10px rgba(0,0,0,0.6);
     }
 
     header h1 {
       font-size: 48px;
+      font-family: 'Playfair Display', serif;
       margin-bottom: 10px;
     }
 
@@ -32,28 +39,9 @@
       font-style: italic;
     }
 
-    nav {
-      background-color: #ec407a;
-      display: flex;
-      justify-content: center;
-      padding: 12px 0;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 20px;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #ffeb3b;
-    }
-
     .section {
-      padding: 40px 20px;
-      max-width: 1000px;
+      padding: 50px 20px;
+      max-width: 900px;
       margin: auto;
     }
 
@@ -71,92 +59,73 @@
       text-align: justify;
     }
 
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-      margin-top: 40px;
-    }
-
-    .gallery-item {
-      background-color: white;
+    .cta {
+      background-color: #f8bbd0;
+      padding: 30px;
       border-radius: 12px;
+      text-align: center;
+      margin-top: 40px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      overflow: hidden;
-      transition: transform 0.3s;
     }
 
-    .gallery-item:hover {
-      transform: scale(1.03);
+    .cta h3 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      color: #6a1b9a;
     }
 
-    .gallery-item img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
+    .cta p {
+      font-size: 18px;
+      margin-bottom: 20px;
     }
 
-    .gallery-item .caption {
-      padding: 15px;
-      font-size: 16px;
-      color: #444;
+    .cta a {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #880e4f;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .cta a:hover {
+      background-color: #ad1457;
     }
 
     footer {
-      background-color: #ff4081;
+      background-color: #880e4f;
       color: white;
       text-align: center;
       padding: 20px;
-      font-size: 14px;
       margin-top: 50px;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Galeri Kreatif</h1>
-    <p>Tempat Menyimpan Imajinasi dan Karya Terbaikmu</p>
+    <h1>Sanggar Tari Jawa Timur</h1>
+    <p>Anjungan Jawa Timur – Taman Mini Indonesia Indah</p>
   </header>
 
-  <nav>
-    <a href="#tentang">Tentang</a>
-    <a href="#galeri">Galeri</a>
-    <a href="#kontak">Kontak</a>
-  </nav>
+  <section class="section">
+    <h2>Pelestarian Budaya Lewat Gerak</h2>
+    <p>Selamat datang di Sanggar Tari Anjungan Jawa Timur – TMII, tempat di mana tradisi dan kreativitas bertemu dalam harmoni. Kami membuka pintu bagi semua generasi muda yang ingin belajar, mengenal, dan mencintai seni tari tradisional Jawa Timur. Dari Tari Remo yang gagah hingga Gandrung yang anggun, setiap gerakan adalah warisan yang hidup.</p>
 
-  <section class="section" id="tentang">
-    <h2>Tentang Kami</h2>
-    <p>Galeri Kreatif adalah ruang digital untuk menampilkan karya seni, desain, fotografi, dan ide-ide visual yang menginspirasi. Kami percaya bahwa setiap orang punya sisi kreatif yang layak untuk ditampilkan dan diapresiasi. Website ini dirancang untuk memudahkan kamu berbagi karya dengan dunia.</p>
-  </section>
+    <p>Di sanggar kami, kamu akan dibimbing oleh pelatih berpengalaman, belajar teknik dasar hingga koreografi panggung, dan berkesempatan tampil di berbagai event budaya nasional. Tidak perlu pengalaman sebelumnya—yang penting adalah semangat dan cinta terhadap budaya Indonesia.</p>
 
-  <section class="section" id="galeri">
-    <h2>Koleksi Terbaru</h2>
-    <div class="gallery">
-      <!-- Ulangi blok ini sebanyak yang kamu mau -->
-      <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" alt="Karya 1" />
-        <div class="caption">Desain Poster Minimalis</div>
-      </div>
-      <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1616627989390-1c3e5b7f4f6e" alt="Karya 2" />
-        <div class="caption">Fotografi Urban</div>
-      </div>
-      <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1586075010920-5e5c9b2f2e2f" alt="Karya 3" />
-        <div class="caption">Tari Tradisional Nusantara</div>
-      </div>
-      <!-- Tambahkan lebih banyak item di sini -->
+    <div class="cta">
+      <h3>Ayo Bergabung Bersama Kami!</h3>
+      <p>Jadilah bagian dari pelestarian budaya. Daftar sekarang dan temukan jati dirimu lewat seni tari.</p>
+      <a href="https://wa.me/6281234567890?text=Halo%20saya%20tertarik%20ikut%20sanggar%20tari%20Jawa%20Timur" target="_blank">Daftar via WhatsApp</a>
     </div>
   </section>
 
-  <section class="section" id="kontak">
-    <h2>Hubungi Kami</h2>
-    <p>📍 Jakarta, Indonesia<br>📞 0812-3456-7890<br>📧 galeri@kreatif.id</p>
-  </section>
-
   <footer>
-    &copy; 2025 Galeri Kreatif. Imajinasi Tanpa Batas.
+    &copy; 2025 Sanggar Tari Jawa Timur – TMII. Gerak yang Menyatu dengan Jiwa Nusantara.
   </footer>
 
 </body>
