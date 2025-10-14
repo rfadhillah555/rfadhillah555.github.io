@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Selamat Datang di Web kopi nongkrong</title>
+  <title>Anak TKJ</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
     * {
       box-sizing: border-box;
@@ -14,37 +14,27 @@
     }
 
     body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #00c6ff, #0072ff);
-      color: #fff;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-
-    header {
-      background-color: rgba(0, 0, 0, 0.3);
-      padding: 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to right, #e3f2fd, #ffffff);
+      color: #333;
     }
 
     nav {
+      background-color: #1e88e5;
       display: flex;
       justify-content: center;
-      background-color: rgba(0, 0, 0, 0.2);
-      padding: 10px 0;
+      padding: 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
     nav a {
-      color: #fff;
+      color: white;
       text-decoration: none;
-      margin: 0 15px;
+      margin: 0 20px;
       font-weight: bold;
+      font-size: 16px;
       transition: color 0.3s;
     }
 
@@ -52,238 +42,101 @@
       color: #ffeb3b;
     }
 
-    main {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    header {
+      background-color: #1565c0;
+      color: white;
       text-align: center;
+      padding: 60px 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 20px;
+      font-style: italic;
+    }
+
+    .section {
       padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
     }
 
-    main h2 {
+    .section h2 {
       font-size: 28px;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
+      color: #1565c0;
+      text-align: center;
     }
 
-    main p {
-      max-width: 600px;
+    .section p {
       font-size: 18px;
+      line-height: 1.6;
+      color: #555;
+      text-align: justify;
+    }
+
+    .highlight {
+      background-color: #bbdefb;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
     footer {
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: #1e88e5;
+      color: white;
       text-align: center;
-      padding: 15px;
+      padding: 20px;
       font-size: 14px;
+      margin-top: 50px;
     }
   </style>
 </head>
 <body>
-
-  <header>
-    <h1>Website kopi nongkrong</h1>
-    <p>Tempat nongkrong paling santai</p>
-  </header>
 
   <nav>
-    <a href="index.html">Beranda</a>
-    <a href="tentang.html">tentang</a>
-    
+    <a href="#beranda">Beranda</a>
+    <a href="#profil">Profil</a>
+    <a href="#tentang">Tentang</a>
+    <a href="#kontak">Kontak</a>
   </nav>
 
-  <main>
-    <h2>Halo, Selamat Datang!</h2>
-    <p>tenangkan pikiranmu dan hatimu, ayo nongkrong di kedai kopi nongkrong dijamin pikiran rilex!</p>
-  </main>
+  <header id="beranda">
+    <h1>Anak TKJ</h1>
+    <p>Teknik Komputer dan Jaringan – Generasi Digital Masa Depan</p>
+  </header>
+
+  <section class="section" id="profil">
+    <h2>Profil Anak TKJ</h2>
+    <p>Anak TKJ adalah pelajar yang siap menghadapi era teknologi dengan semangat belajar tinggi dan rasa ingin tahu yang besar. Kami belajar tentang jaringan komputer, sistem operasi, perangkat keras, dan dunia digital yang terus berkembang. Di balik kabel dan router, kami membangun masa depan!</p>
+  </section>
+
+  <section class="section" id="tentang">
+    <h2>Kenapa Harus TKJ?</h2>
+    <div class="highlight">
+      <p>✅ Belajar langsung praktek jaringan dan komputer<br>
+         ✅ Bisa jadi teknisi, admin server, atau programmer<br>
+         ✅ Peluang kerja luas di dunia IT<br>
+         ✅ Seru, menantang, dan penuh inovasi</p>
+    </div>
+
+    <p>Kalau kamu suka ngoprek komputer, penasaran sama cara kerja internet, atau pengen jadi ahli teknologi, jurusan TKJ adalah tempat yang tepat buat kamu. Yuk jadi bagian dari anak TKJ dan wujudkan masa depan digital yang kamu impikan!</p>
+  </section>
+
+  <section class="section" id="kontak">
+    <h2>Kontak Kami</h2>
+    <p>📍 SMK Teknologi Nusantara<br>📞 0812-3456-7890<br>📧 tkj@smknusantara.sch.id</p>
+  </section>
 
   <footer>
-    &copy; 2025 Website kopi nongkrong. Dibuat oleh owner kopi nongkrong rfadhillah555 .
+    &copy; 2025 Komunitas Anak TKJ. Kabel boleh kusut, masa depan tetap terhubung.
   </footer>
 
-</body>
-  </html>
-  
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Formulir Pendaftaran</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #fceabb, #f8b500);
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-    }
-
-    .form-container {
-      background-color: #fff;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-      max-width: 500px;
-      width: 100%;
-    }
-
-    h2 {
-      text-align: center;
-      margin-bottom: 25px;
-      color: #333;
-    }
-
-    label {
-      display: block;
-      margin-top: 15px;
-      font-weight: bold;
-      color: #555;
-    }
-
-    input, select {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 16px;
-    }
-
-    button {
-      margin-top: 25px;
-      width: 100%;
-      padding: 12px;
-      background-color: #f8b500;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    button:hover {
-      background-color: #e09e00;
-    }
-
-    .back-link {
-      display: block;
-      text-align: center;
-      margin-top: 20px;
-      color: #333;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    .back-link:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
-  <div class="form-container">
-    <h2>Formulir Pesanan</h2>
-    <form>
-      <label for="nama">Nama Lengkap</label>
-      <input type="text" id="nama" name="nama" required />
-
-      <label for="email">jumlah pesanan</label>
-      <input type="email" id="email" name="email" required />
-
-      <label for="telepon">No meja</label>
-      <input type="tel" id="telepon" name="telepon" required />
-
-      <label for="kategori">Menu Pesanan</label>
-      <select id="kategori" name="kategori" required>
-        <option value="">-- Pilih Kategori --</option>
-        <option value="siswa">Kopi tubruk</option>
-        <option value="mahasiswa">Kopi Susu</option>
-        <option value="umum">kopi Americano</option>
-      </select>
-
-      <a href="https://wa.me/6281234840433?text=Halo%20saya%20mau%20pesan%20kopi" target="_blank">Pesan Sekarang</a>
-
-    <a href="index.html" class="back-link">← Kembali ke Beranda</a>
-  </div>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Konfirmasi Pendaftaran</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #00c9ff, #92fe9d);
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-      color: #333;
-    }
-
-    .confirmation-box {
-      background-color: #fff;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-      max-width: 500px;
-      width: 100%;
-      text-align: center;
-    }
-
-    .confirmation-box h2 {
-      color: #2e7d32;
-      margin-bottom: 20px;
-    }
-
-    .confirmation-box p {
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 12px 25px;
-      background-color: #2e7d32;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      text-decoration: none;
-      box-shadow: 0 0 10px #2e7d32;
-    }
-
-    .btn:hover {
-      background-color: #388e3c;
-    }
-  </style>
-</head>
-<body>
-  </div>
 </body>
 </html>
