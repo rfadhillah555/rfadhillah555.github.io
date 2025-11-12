@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rizky Telor — Alamat</title>
+  <style>
+    :root {
+      --kuning-utama: #C9A227;
+      --kuning-gelap: #9C7D1C;
+      --teks: #2b2b2b;
+      --putih: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color: var(--teks);
+      background: linear-gradient(180deg, var(--kuning-utama), var(--kuning-gelap));
+      min-height: 100vh;
+    }
+    /* Navigasi */
+    nav {
+      background: var(--kuning-gelap);
+      padding: 12px 24px;
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+    }
+    nav a {
+      color: var(--putih);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffe680;
+    }
+    .kartu {
+      max-width: 720px;
+      margin: 32px auto;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 16px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+      overflow: hidden;
+    }
+    .header {
+      background: var(--kuning-gelap);
+      color: var(--putih);
+      padding: 20px 24px;
+    }
+    .judul {
+      margin: 0;
+      font-size: 1.75rem;
+    }
+    .konten {
+      padding: 24px;
+    }
+    .label {
+      font-weight: 600;
+      color: #5a4a1a;
+      margin-bottom: 8px;
+    }
+    .alamat {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      background: #fff7d6;
+      border: 1px solid #e3cf86;
+      border-radius: 12px;
+      padding: 16px;
+    }
+    .map {
+      margin-top: 16px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #e3cf86;
+    }
+    iframe { width: 100%; height: 340px; border: 0; }
+    .footer {
+      padding: 16px 24px;
+      font-size: 0.9rem;
+      color: #6b5a28;
+      background: #fff3c2;
+      border-top: 1px solid #e3cf86;
+    }
+  </style>
+</head>
+<body>
+  <!-- Menu Navigasi -->
+  <nav>
+    <a href=telor.html>Beranda</a>
+    <a href=produktelor.html>Produk</a>
+    <a href=kontaktelor.html>Kontak</a>
+  </nav>
+
+  <main class="kartu" aria-labelledby="judul">
+    <header class="header">
+      <h1 id="judul" class="judul">Rizky Telor — Alamat</h1>
+    </header>
+
+    <section class="konten">
+      <div class="label">Alamat</div>
+      <address class="alamat">
+        Telurku<br>
+        Jl. Setu Pedongkelan RT04/RW05 NO.73<br>
+        Kode Pos 15154
+      </address>
+
+      <div class="map" aria-label="Lokasi di peta">
+        <iframe
+          src="https://www.google.com/maps?q=Larangan,+Banten,+Indonesia&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Peta lokasi Rizky Telor">
+        </iframe>
+      </div>
+    </section>
+
+    <footer class="footer">
+      Lokasi ditampilkan untuk memudahkan penemuan alamat Rizky Telor
+    </footer>
+  </main>
+</body>
+</html>
