@@ -1,128 +1,88 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Rizky Laundry</title>
+  <meta charset="UTF-8">
+  <title>Laundry Bersih & Wangi</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
-
-    * {
-      box-sizing: border-box;
+    body {
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-    }
-
-    body {
-      font-family: 'Quicksand', sans-serif;
-      background: linear-gradient(to right, #e0f7fa, #fff);
+      background: #f5f5f5;
       color: #333;
     }
-
     header {
-      background-color: #00acc1;
+      background: #2a9d8f;
       color: white;
-      text-align: center;
-      padding: 60px 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
-
-    header h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 20px;
-      font-style: italic;
-    }
-
-    .section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .section h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
-      color: #00796b;
-      text-align: center;
-    }
-
-    .price-list {
-      background-color: #e0f2f1;
       padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      margin-bottom: 40px;
+      text-align: center;
     }
-
-    .price-list ul {
-      list-style: none;
-      padding-left: 0;
-      font-size: 18px;
-      color: #444;
-    }
-
-    .price-list li {
-      margin-bottom: 12px;
-    }
-
-    .images {
+    nav {
+      background: #264653;
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      gap: 30px;
     }
-
-    .images img {
-      max-width: 300px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      display: block;
     }
-
+    nav a:hover {
+      background: #2a9d8f;
+    }
+    section {
+      padding: 40px;
+      text-align: center;
+    }
+    section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
     footer {
-      background-color: #00acc1;
+      background: #264653;
       color: white;
       text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      margin-top: 50px;
+      padding: 15px;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Rizky Laundry</h1>
-    <p>Bersih, Wangi, dan Cepat – Pilihan Terbaik untuk Pakaian Anda</p>
+    <h1>Laundry Bersih & Wangi</h1>
+    <p>Solusi pakaian bersih, rapi, dan harum setiap hari</p>
   </header>
 
-  <section class="section">
-    <h2>Daftar Harga</h2>
-    <div class="price-list">
-      <ul>
-        <li>🧺 Reguler: Rp 4.000 / kilo (Selesai 3 hari)</li>
-        <li>⚡ Express: Rp 9.000 / kilo (Selesai 1 hari)</li>
-        <li>🚀 Kilat: Rp 11.000 / kilo (Selesai dalam 6 jam)</li>
-      </ul>
-    </div>
+  <nav>
+    <a href="#beranda">Beranda</a>
+    <a href="#kualitas">Kualitas</a>
+    <a href="#alamat">Alamat</a>
+  </nav>
 
-    <h2>Fasilitas Kami</h2>
-    <div class="images">
-      <div>
-        <p style="text-align:center; margin-top:10px;">Mesin Cuci Otomatis</p>
-      </div>
-        <p style="text-align:center; margin-top:10px;">pengering baju berkualitas</p>
-      <div>
-        <p style="text-align:center; margin-top:10px;">Setrika Uap Profesional</p>
-      </div>
-    </div>
+  <section id="beranda">
+    <h2>Selamat Datang</h2>
+    <p>Kami melayani laundry cepat, bersih, dan wangi dengan harga terjangkau.</p>
+    <img src="https://images.unsplash.com/photo-1581579185169-1c7c3a2c7f5f" alt="Laundry bersih">
+  </section>
+
+  <section id="kualitas">
+    <h2>Kualitas Terbaik</h2>
+    <p>Pakaian Anda dicuci dengan mesin modern, deterjen premium, dan tenaga profesional. 
+       Kami menjamin hasil yang bersih, rapi, dan harum.</p>
+  </section>
+
+  <section id="alamat">
+    <h2>Alamat & Kontak</h2>
+    <p>Jl. Melati No. 45, Ciracas, Jakarta Timur</p>
+    <p>HP/WA: 0812-9876-5432</p>
   </section>
 
   <footer>
-    &copy; 2025 Rizky Laundry. Bersihnya Pakaian, Senyumnya Pelanggan.
+    <p>&copy; 2025 Laundry Bersih & Wangi</p>
   </footer>
 
 </body>
